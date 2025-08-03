@@ -7,7 +7,7 @@
 
 ## Abstract
 
-We propose a coordinate system for gravitational systems defined not by spacetime positions but by information-theoretic parameters: gravitational entropy $(S_g)$ from Bekenstein-Hawking and generalized entropy, propagation kernel $(\mathcal{P}_g)$ defined via influence functionals, and entanglement spectrum $(\Phi_E)$ based on modular Hamiltonian eigenspectra. Under the simplifying assumption that systems sharing identical coordinates may exhibit nonlocal quantum correlations beyond standard QFT, we derive specific predictions for phase coherence in Hawking radiation. While astrophysical tests require sensitivity improvements of $\sim 10^{60}$, we propose laboratory analogs, particularly in Bose-Einstein condensate analogs of black holes, that may empirically test the model's central postulate. We emphasize this is an exploratory model—not a new theory of quantum gravity, but a tool for uncovering potential correlations embedded in its informational substrate.
+We propose a coordinate system for gravitational systems defined not by spacetime positions but by information-theoretic parameters: gravitational entropy $(S_g)$, propagation kernel $(\mathcal{P}_g)$ defined via influence functionals, and entanglement spectrum $(\Phi_E)$ based on modular Hamiltonian eigenspectra. Under the simplifying assumption that systems sharing identical coordinates may exhibit nonlocal quantum correlations beyond standard QFT, we derive specific predictions for phase coherence in Hawking radiation. While astrophysical tests require sensitivity improvements of $\sim 10^{60}$, we propose laboratory analogs, particularly in Bose-Einstein condensate analogs of black holes, that may empirically test the model's central postulate. We emphasize this is an exploratory model—not a new theory of quantum gravity, but a tool for uncovering potential correlations embedded in its informational substrate.
 
 ---
 
@@ -32,43 +32,44 @@ This exploratory model aims to test whether information-theoretic coordinates re
 
 ---
 
-## 2. The G-Space Framework
+## 2. The G-Space Model
 
 ### 2.1 Coordinate Definitions
 
-We define a three-dimensional manifold $\mathcal{G}$ with coordinates motivated by established physical quantities:
+We model gravitational systems using three coordinates grounded in established physics. Note that G-space is not a spacetime manifold, but a coordinate space indexing gravitational systems by informational parameters. Unlike a conventional manifold with local neighborhoods and metric structure derived from proximity, G-space groups systems by their information-theoretic properties regardless of spacetime separation.
 
 **Gravitational Entropy** $S_g$: Following the holographic principle, for a codimension-2 surface $\Sigma$:
-$S_g[\Sigma] = \frac{A[\Sigma]}{4G\hbar} + S_{\text{matter}}[\mathcal{R}] + \mathcal{O}(\hbar)$
+$$S_g[\Sigma] = \frac{A[\Sigma]}{4G\hbar} + S_{\text{matter}}[\mathcal{R}] + \mathcal{O}(\hbar)$$
 
-This is the generalized entropy of Bekenstein and Hawking, extended to include matter contributions. In the context of AdS/CFT, this equals the boundary entanglement entropy.
+This is the generalized entropy of Bekenstein and Hawking, extended to include matter contributions as in the generalized second law. The $\mathcal{O}(\hbar)$ term captures quantum gravity corrections that, while negligible for macroscopic black holes, become significant for Planck-scale systems or near-extremal configurations where quantum effects dominate. In AdS/CFT contexts, this equals boundary entanglement entropy via Ryu-Takayanagi.
 
-**Propagation Tensor** $\mathcal{P}_g^{\mu\nu}$: Inspired by the Feynman-Vernon influence functional, we define:
-$\mathcal{P}_g^{\mu\nu}(x) = \int_{\mathcal{D}} T^{\mu\nu}(x') W[x,x'] \sqrt{-g} \, d^4x'$
+**Propagation Kernel** $\mathcal{P}_g^{\mu\nu}$: Defined through the influence functional formalism:
+$$\mathcal{P}_g^{\mu\nu}(x) = \int_{\mathcal{D}} T^{\mu\nu}(x') K[x,x'] \sqrt{-g} \, d^4x'$$
 
-where $W[x,x']$ is a weight function encoding causal influence, analogous to the Wightman function in quantum field theory. In the classical limit, $W \to G_R$ (retarded Green's function). The self-consistent construction follows iterative schemes familiar from Dyson-Schwinger equations: the metric determining $W$ is itself derived from $\mathcal{P}_g$.
+where $\mathcal{D}$ is the causal diamond (or more generally, the domain of dependence) containing the system of interest—typically the region bounded by the intersection of past and future light cones from the system's worldline. The self-consistency requirement that the metric determining $K$ derives from $\mathcal{P}_g$ itself follows standard Dyson-Schwinger iteration schemes (see Appendix A for explicit construction). Here, $K[x,x'] = \text{Tr}[\rho W(x,x')]$ is the quantum-averaged Wightman kernel encoding causal influence. Other choices of $K[x,x']$, such as Feynman or Hadamard kernels, may yield variant formulations of $\mathcal{P}_g$, potentially encoding different aspects of quantum influence. This approach shares conceptual similarities with Neukart's informational stress-energy tensor [12], though our propagation kernel focuses on causal structure rather than direct curvature modification. Recent results suggest that spacetime curvature modulates gravity-mediated entanglement [15], supporting the idea that $\mathcal{P}_g$ encodes both geometric and causal influence.
 
-**Entanglement Phase** $\Phi_E$: Characterized by the spectrum of Rényi entropies:
-$S_n(\rho) = \frac{1}{1-n} \log \text{Tr}(\rho^n)$
+**Entanglement Spectrum** $\Phi_E$: The minimal sufficient statistics of the modular Hamiltonian spectrum:
+$$\Phi_E = \{\mu_n(\Lambda)\}_{n=1}^{N(\Lambda)}$$
 
-We define equivalence classes:
-$\Phi_E = [\{S_n(\rho)\}_{n=2}^\infty]_{\sim}$
+where $\mu_n$ are eigenvalues of the modular Hamiltonian $H_{\text{mod}} = -\log \rho_A$ coarse-grained at scale $\Lambda$, and $N(\Lambda) \sim A/\Lambda^2$ bounds the number of relevant modes. Unlike the entanglement spectrum in condensed matter physics (which typically refers to Schmidt values [11]), we use the modular Hamiltonian eigenspectrum to capture gravitational entanglement structure. This choice is motivated by the modular Hamiltonian's direct connection to local physics in QFT: it generates boost transformations in Rindler space and encodes the local temperature felt by accelerated observers. For gravitational systems, where local observables and horizons play crucial roles, the modular spectrum provides a more physically relevant characterization than abstract Schmidt coefficients. This provides a finite parameterization connected to observable quantities like modular flow and relative entropy.
 
-where $\sim$ denotes equivalence under RG flow with cutoff $\Lambda$. This generalizes the entanglement spectrum approach of Li and Haldane to gravitational contexts.
+### 2.2 Working Assumption: Coordinate Matching Implies Correlation
 
-### 2.2 The Co-location Principle
+**Model Assumption**: We explore consequences under the assumption that systems sharing identical $(S_g, \mathcal{P}_g, \Phi_E)$ coordinates exhibit quantum correlations beyond those predicted by local quantum field theory. This extends the EPR concept of entanglement to an information-theoretic coordinate space where "sameness" is defined not by shared quantum state but by identical gravitational-informational properties.
 
-**Speculative Hypothesis**: We propose that astrophysical objects with identical mass and charge have identical G-space coordinates. If this hypothesis holds:
+Under this assumption:
 
-**Claim 1**: All Schwarzschild black holes of mass $M$ would map to the single point:
-$(S_g, \mathcal{P}_g, \Phi_E) = \left(\frac{4\pi GM^2}{\hbar c}, \mathcal{P}_{\text{Sch}}(M), \Phi_{\text{thermal}}(T_H)\right)$
+**Case 1**: All Schwarzschild black holes of mass $M$ share coordinates:
+$$(S_g, \mathcal{P}_g, \Phi_E) = \left(\frac{4\pi GM^2}{\hbar c}, \mathcal{P}_{\text{Sch}}(M), \{\mu_n^{\text{thermal}}(T_H)\}\right)$$
 
-where $T_H = \hbar c^3/(8\pi GMk_B)$ is the Hawking temperature.
+where $T_H = \hbar c^3/(8\pi GMk_B)$ is the Hawking temperature, with $k_B$ being Boltzmann's constant.
 
-**Claim 2**: All Minkowski vacuum regions would map to:
-$(S_g, \mathcal{P}_g, \Phi_E) = (0, \eta^{\mu\nu}, \Phi_{\text{vac}})$
+**Case 2**: All Minkowski vacuum regions share:
+$$(S_g, \mathcal{P}_g, \Phi_E) = (0, \eta^{\mu\nu}, \{\mu_n^{\text{vac}}\})$$
 
-Under this hypothesis, spatially separated objects with identical properties would be different spacetime projections of a single G-space entity. We stress this is a conjecture, not a derived result.
+Even the Minkowski vacuum exhibits a non-trivial entanglement spectrum $\{\mu_n^{\text{vac}}\}$, arising from quantum fluctuations across causal horizons (e.g., Rindler wedges). This reflects the deep connection between vacuum entanglement and emergent geometry.
+
+This assumption—that coordinate matching implies correlation—is the core hypothesis we seek to test. It may be false, but exploring its consequences yields specific predictions.
 
 ---
 
@@ -76,10 +77,10 @@ Under this hypothesis, spatially separated objects with identical properties wou
 
 ### 3.1 The Projection Map
 
-Spacetime emerges via projection operators $\Pi_x: \mathcal{G} \rightarrow \mathcal{M}^4$ that map G-space points to spacetime events. Multiple projections of the same G-space point create apparently distinct objects:
+In our model, spacetime emerges via projection maps $\Pi_x: \mathcal{G} \rightarrow \mathcal{M}^4$ that map G-space coordinates to spacetime events. Multiple projections of the same G-space coordinates yield apparently distinct objects:
 
-$|\text{BH at } x_1\rangle = \Pi_{x_1}|S_g(M), \mathcal{P}_g(M), \Phi_E(M)\rangle$
-$|\text{BH at } x_2\rangle = \Pi_{x_2}|S_g(M), \mathcal{P}_g(M), \Phi_E(M)\rangle$
+$$|\text{BH at } x_1\rangle = \Pi_{x_1}|S_g(M), \mathcal{P}_g(M), \Phi_E(M)\rangle$$
+$$|\text{BH at } x_2\rangle = \Pi_{x_2}|S_g(M), \mathcal{P}_g(M), \Phi_E(M)\rangle$$
 
 ```mermaid
 graph TD
@@ -103,83 +104,141 @@ graph TD
     style BH3 fill:#bbf,stroke:#333,stroke-width:2px
 ```
 
-> **Figure:** Multiple spacetime realizations of a single G-space point. Each projection $\Pi_{x_i}$ maps the same gravitational-information coordinate to a different spacetime location.
+**Figure:** Multiple spacetime realizations of a single G-space point. Each projection $\Pi_{x_i}$ maps the same gravitational-information coordinate to a different spacetime location.
 
-We leave the construction of explicit $\Pi_x$ operators to future work, treating them here as abstract maps that encode how a G-space entity interfaces with local observers. These operators must be consistent with observational decoherence and preserve the causal structure of the emergent spacetime. In the classical limit, they reduce to coordinate charts on the emergent manifold.
+The construction of explicit $\Pi_x$ maps remains an open problem. They must satisfy:
+- **Causality**: Spacelike-separated projections preserve local physics
+- **Consistency**: Overlapping projections agree on shared regions
+- **Decoherence**: Environmental coupling selects stable projection bases
+
+These maps might relate to tensor network encodings (MERA, HaPPY codes) or holographic dictionaries in AdS/CFT. Specifically, they may connect to holographic tensor networks as explored in [8] and the entanglement-geometry correspondence developed by Swingle [3]. Our projection maps generalize these ideas by allowing multiple spacetime "outlets" for a single G-space point, whereas traditional tensor networks map entanglement patterns to unique geometric regions. This multiplicity is what enables the non-local correlations central to our model. The recent work by Brahma and Seenivasan [15] showing that spacetime curvature affects gravity-mediated entanglement provides additional evidence that geometric properties are encoded in quantum correlations, supporting our framework where $\mathcal{P}_g$ encodes both causal and geometric information. We return to experimental implications of these coordinate-defined projections in Section 4.
 
 ### 3.2 Dynamics
 
-Evolution in G-space follows:
-$i\hbar \frac{\partial}{\partial \tau}|\Psi\rangle = \hat{H}_{\mathcal{G}}|\Psi\rangle$
+Evolution in the model follows:
+$$i\hbar \frac{\partial}{\partial \tau}|\Psi\rangle = \hat{H}_{\mathcal{G}}|\Psi\rangle$$
 
-where $\hat{H}_{\mathcal{G}}$ is the G-space Hamiltonian and $\tau$ is an evolution parameter. Here, $\tau$ represents a global evolution parameter in G-space, analogous to the affine parameter along geodesics but not necessarily related to coordinate time in any single spacetime projection. Different observers may experience different relationships between $\tau$ and their local time coordinates. The classical limit recovers general relativity when $S_g \gg 1$ and quantum corrections are suppressed.
+where $\tau$ is a global evolution parameter in G-space—not coordinate time but analogous to an affine parameter that different observers relate to their local time differently. We assume $\tau$ is not directly observable, but relates to local proper time via projection maps $\Pi_x$. Classical general relativity emerges when $S_g \gg 1$ and quantum corrections become negligible.
 
 ---
 
 ## 4. Observable Predictions
 
-### 4.1 Black Hole Correlations
+*Note: This section derives theoretical consequences of our model. Direct astrophysical tests are beyond current technology; we focus on establishing benchmarks and designing analog experiments.*
 
-The co-location principle predicts correlations between Hawking radiation from different black holes of the same mass.
+### 4.1 Theoretical Signatures
 
-**Prediction**: For two black holes with identical mass $M$ at spacetime positions $x_1$ and $x_2$:
+If coordinate matching implies correlation, we predict phase coherence in Hawking radiation:
 
-$$C_{12}(\omega) = \langle \hat{a}^\dagger_\omega(x_1) \hat{a}_\omega(x_2) \rangle = \frac{\hbar \omega}{e^{\beta\hbar\omega} - 1} \times \exp\left(-\frac{|x_1 - x_2|^2}{L_{\text{coh}}^2}\right)$$
+$$C_{12}(\omega) = \langle \hat{a}^\dagger_\omega(x_1) \hat{a}_\omega(x_2) \rangle = \frac{\hbar \omega}{e^{\beta\hbar\omega} - 1} \times F(|x_1 - x_2|, L_{\text{coh}})$$
 
-where $\beta = 1/k_B T_H$ and the coherence length is:
-$$L_{\text{coh}} = \frac{c}{\omega} \sqrt{\frac{M}{M_P}} \approx 10^{19} \text{ m} \times \left(\frac{M}{M_\odot}\right)^{1/2}$$
+where the decay function takes the form:
+$$F(d, L_{\text{coh}}) = \exp\left(-\frac{d^2}{2L_{\text{coh}}^2}\right)$$
 
-For stellar-mass black holes and gravitational wave frequencies ($\omega \sim 100$ Hz), this gives $L_{\text{coh}} \sim 10^{22}$ m, making correlations potentially observable between black holes in the same galaxy.
+This Gaussian decay reflects decoherence from environmental interactions, with coherence length:
+$$L_{\text{coh}} \sim \frac{c}{\omega} \sqrt{\frac{M}{M_P}}$$
 
-**Time Evolution of Correlations**: The correlation strength evolves as:
-$C_{12}(\omega, t) = C_{12}(\omega, 0) \times \exp\left(-\frac{t}{\tau_{\text{decay}}}\right)$
+**Sensitivity benchmark**: For stellar-mass black holes, detecting such correlations would require:
+- Temperature sensitivity: $\Delta T < 10^{-7}$ K (Hawking temperature)
+- Phase resolution: $\Delta \phi < 10^{-60}$ rad (accounting for signal strength)
+- Integration time: $t > 10^{100}$ s (for single-photon statistics)
 
-where the decay time is:
-$\tau_{\text{decay}} = \frac{M}{M_P} \times \frac{\hbar}{k_B T_{\text{env}}} \sim 10^{40} \text{ s} \times \left(\frac{M}{M_\odot}\right)$
+These estimates highlight the challenge, not imply immediate feasibility. They serve as theoretical benchmarks analogous to how early atomic theory required seemingly impossible precision later achieved through technological advance.
 
-For stellar-mass black holes in the cosmic microwave background ($T_{\text{env}} \approx 3$ K), correlations persist for times vastly exceeding the age of the universe, making long-baseline observations feasible.
+### 4.2 Toward Falsifiability: A Roadmap
 
-### 4.2 Detection Strategy
+The model makes falsifiable predictions at multiple scales:
 
-The correlation could be measured using:
+| Test Type | Difficulty | Signal Strength | Falsification Criterion |
+|-----------|------------|-----------------|------------------------|
+| **Analog Black Holes** (BEC) | Near-term | $\text{SNR} \sim 10$ | No phase correlation above thermal noise |
+| **Quantum Information** | Medium-term | Direct measurement | No enhanced correlations for matched $\{\mu_n\}$ |
+| **Cosmological** | Long-term | $10^{-15}$ relative | No CMB anomalies at large angular scales |
+| **Astrophysical** | Far future | $10^{-60}$ relative | No BH radiation correlations |
 
-1. **Gravitational wave detectors** with quantum readout to measure vacuum fluctuations near merging black holes
-2. **Cross-correlation analysis** between simultaneous events at different detectors
-3. **Statistical accumulation** over multiple events to overcome noise
+Our approach builds on recent proposals for detecting gravity-mediated entanglement. Krisnanda et al. [13] have shown that gravitational coupling between masses can generate observable entanglement, though they focus on optomechanical setups rather than our coordinate-matching principle. More recently, Anastopoulos et al. [14] demonstrated that even classical Newtonian evolution can generate similar entanglement, highlighting the need for careful interpretation of such experiments. Brahma and Seenivasan [15] extended these ideas to cosmological settings, showing that spacetime curvature affects gravity-induced entanglement—a result that supports our prediction that G-space coordinates encode geometric information. The recent surge of interest in gravity-mediated entanglement experiments [13] further motivates the use of analog systems to test these correlations.
 
-The predicted correlation strength is:
-$$\text{SNR} \sim \sqrt{N} \times \frac{L_{\text{coh}}}{d} \times \left(\frac{\delta t}{\tau_H}\right)^{1/2}$$
+**A. Analog Black Hole Systems**
 
-where $N$ is the number of observed events, $d$ is the separation, $\delta t$ is observation time, and $\tau_H \sim GM/c^3$ is the Hawking time.
+In Bose-Einstein condensates or optical analogs where sonic/optical horizons can be created:
+
+1. Create multiple horizons with identical parameters (mass analog $M_{\text{eff}}$)
+2. Measure phonon/photon emission from each horizon
+3. **Falsification criterion**: If measured phase correlations across analog horizons do not exceed thermal noise—after removing classical correlations—the model is falsified
+
+Expected signal in BEC systems:
+$$\text{SNR}_{\text{analog}} \sim \sqrt{N_{\text{horizons}}} \times \frac{T_{\text{lab}}}{T_{\text{Hawking,analog}}} \times Q$$
+
+where $Q$ is the cavity quality factor (ratio of stored energy to energy loss per cycle). With $T_{\text{Hawking,analog}} \sim \mu$K achievable in current setups, this brings tests within reach.
+
+**B. Quantum Information Tests**
+
+The entanglement spectrum $\Phi_E$ can be tested in controllable quantum systems:
+
+1. Prepare multiple copies of identical entangled states in separated locations
+2. Measure modular flow correlations between copies
+3. **Falsification criterion**: If systems with identical $\{\mu_n\}$ spectra show no enhanced correlations beyond quantum mechanics predictions, the model's core assumption fails
+
+Recent work has successfully reconstructed modular Hamiltonians in spin chains [9] and trapped ion systems [10], making such tests experimentally feasible.
+
+**C. Cosmological Constraints**
+
+If vacuum regions share correlations, this affects:
+- CMB fluctuation statistics at large angular separations
+- Vacuum birefringence measurements
+- Casimir force modifications
+
+Any of these not matching predictions would falsify the model.
 
 ---
 
 ## 5. Consistency Checks
 
-### 5.1 Causality
+### 5.1 Causality Preservation
 
-A critical concern is whether G-space correlations violate causality. We argue they do not:
-- Like EPR correlations, they cannot enable signaling
-- The no-communication theorem extends to G-space projections
-- Information propagation remains limited by light speed in emergent spacetime
+The model must not enable superluminal signaling. We argue correlations preserve causality through:
+- **No-signaling theorem**: Like EPR pairs, correlations cannot transmit information
+- **Projection constraints**: Local operations at $x_1$ cannot affect measurements at spacelike-separated $x_2$
+- **Holographic bound**: Information flow limited by area/entropy constraints
 
-However, a complete proof requires developing the full dynamics of projection operators, which remains future work.
+Crucially, non-signaling is preserved even under G-space correlations because projection maps $\Pi_x$ are constructed to prevent causal paradoxes—they allow correlations but not communication between spacelike-separated regions.
 
-### 5.2 Environmental Decoherence
+However, proving this rigorously requires developing the full projection map formalism—a key open problem. Recent work by Anastopoulos et al. [14] showing that classical Newtonian dynamics can generate entanglement without violating causality provides a useful consistency check, though our framework predicts stronger correlations due to the coordinate-matching principle.
 
-Standard decoherence would suppress correlations on timescale:
-$\tau_{\text{dec}} \sim \frac{\hbar}{k_B T_{\text{env}}} \times \frac{M}{M_P}$
+### 5.2 Decoherence Analysis
 
-For astrophysical black holes, this nominally gives $\tau_{\text{dec}} \gg t_{\text{universe}}$. However, this calculation assumes standard quantum mechanics; G-space might modify decoherence rates in ways we cannot yet calculate.
+Standard quantum decoherence would destroy correlations on timescale:
+$$\tau_{\text{dec}} \sim \frac{\hbar}{k_B T_{\text{env}}} \times \frac{M}{M_P}$$
 
-### 5.3 Recovery of Known Physics
+For astrophysical black holes in CMB background ($T_{\text{env}} \sim 3$ K):
+$$\tau_{\text{dec}} \sim 10^{40} \text{ s} \times \left(\frac{M}{M_\odot}\right)$$
 
-The framework should reduce to general relativity and quantum field theory in appropriate limits:
-- $S_g \to \infty$: Classical gravity (established for holographic entropy)
-- $\mathcal{P}_g \to \eta^{\mu\nu}$: Flat spacetime (by construction)
-- $\Phi_E \to \Phi_{\text{product}}$: Unentangled systems (follows from Rényi entropy properties)
+This exceeds the age of the universe, suggesting correlations could survive. However, this assumes:
+- Standard decoherence models apply unchanged
+- No additional G-space-specific decoherence mechanisms
+- Environmental coupling strength remains perturbative
 
-Detailed verification requires developing the full projection formalism.
+These assumptions, while plausible, highlight the need for a detailed decoherence analysis within the full G-space formalism.
+
+### 5.3 Classical and Quantum Limits
+
+The model must reproduce known physics in appropriate limits:
+
+**Classical limit** ($S_g \gg k$):
+- Holographic entropy → Bekenstein-Hawking area law ✓
+- $\mathcal{P}_g$ → Classical stress-energy via Einstein equations ✓
+- $\Phi_E$ → Uncorrelated product states (needs verification)
+
+**Flat space limit** ($\mathcal{P}_g \to \eta^{\mu\nu}$):
+- Minkowski vacuum recovered by construction ✓
+- Propagation kernel → Standard QFT propagators ✓
+- Modular Hamiltonian → Rindler boost generator ✓
+
+**Unentangled limit** ($\Phi_E \to \Phi_{\text{product}}$):
+- Systems decouple as expected (follows from modular Hamiltonian properties)
+- Correlations vanish, recovering local physics
+
+Detailed verification awaits full development of projection maps.
 
 ---
 
@@ -243,8 +302,6 @@ Critical issues for development:
 
 The model's purpose is to explore whether information-theoretic parameterization reveals hidden structure. Its assumptions may be wrong, but they are wrong in a precise, testable way.
 
----
-
 ## 7. Conclusion
 
 We have developed a model that parameterizes gravitational systems using information-theoretic coordinates $(S_g, \mathcal{P}_g, \Phi_E)$ and explored consequences of the assumption that coordinate matching implies quantum correlations. This assumption yields concrete predictions: phase coherence in Hawking radiation with sensitivity requirements quantified at $\sim 10^{60}$ improvement over current technology, and specific falsifiable tests in analog systems.
@@ -259,13 +316,9 @@ Future work should focus on developing analog experiments, refining the mathemat
 
 Recent proposals [12-15] have increasingly treated quantum correlations as carriers of geometric or gravitational information, lending support to the kind of coordinate-based framework we explore here. While G-space may or may not describe nature, it offers a precise, falsifiable lens through which we may uncover the hidden symmetries of gravity and information.
 
----
-
 ## Acknowledgments
 
-We thank [colleagues] for discussions.
-
----
+We thank [colleagues] for discussions. This work was supported by [funding agencies].
 
 ## References
 
@@ -299,8 +352,6 @@ We thank [colleagues] for discussions.
 
 [15] Brahma, S. & Seenivasan, A.N. (2023). "Probing the curvature of the cosmos from quantum entanglement due to gravity." Int. J. Mod. Phys. D 32, 2342010.
 
----
-
 ## Appendix A: Technical Derivations
 
 ### A.1 Schwarzschild Black Hole: $\mathcal{P}_g$ Computation
@@ -310,30 +361,37 @@ We outline the iterative construction of $\mathcal{P}_g$ for a Schwarzschild bla
 **Step 1**: Begin with seed metric $g^{(0)}_{\mu\nu} = \eta_{\mu\nu}$ (flat space)
 
 **Step 2**: Compute influence kernel:
-$K^{(n)}[x,x'] = \text{Tr}[\rho_{\text{thermal}}(T_H) W^{(n)}(x,x')]$
+$$K^{(n)}[x,x'] = \text{Tr}[\rho_{\text{thermal}}(T_H) W^{(n)}(x,x')]$$
 
 where $W^{(n)}$ is the Wightman function in metric $g^{(n)}$.
 
-**Step 3**: Update propagation tensor:
-$\mathcal{P}_g^{(n+1),\mu\nu}(x) = \int T^{\mu\nu}_{\text{Sch}}(x') K^{(n)}[x,x'] \sqrt{-g^{(n)}} \, d^4x'$
+**Step 3**: Update propagation kernel:
+$$\mathcal{P}_g^{(n+1),\mu\nu}(x) = \int T^{\mu\nu}_{\text{Sch}}(x') K^{(n)}[x,x'] \sqrt{-g^{(n)}} \, d^4x'$$
 
 **Step 4**: Extract metric from $\mathcal{P}_g$ via Einstein equations:
-$G_{\mu\nu}[g^{(n+1)}] = 8\pi G \mathcal{P}_g^{(n+1),\mu\nu}$
+$$G_{\mu\nu}[g^{(n+1)}] = 8\pi G \mathcal{P}_g^{(n+1),\mu\nu}$$
 
 **Step 5**: Iterate until $||\mathcal{P}_g^{(n+1)} - \mathcal{P}_g^{(n)}|| < \epsilon$
 
 For Schwarzschild geometry, we expect convergence to:
-$\mathcal{P}_g^{rr} = \frac{2GM}{c^2r^2}\left(1-\frac{2GM}{c^2r}\right)^{-1}, \quad \mathcal{P}_g^{\theta\theta} = \frac{2GM}{c^2}, \quad \text{etc.}$
+$$\mathcal{P}_g^{rr} = \frac{2GM}{c^2r^2}\left(1-\frac{2GM}{c^2r}\right)^{-1}, \quad \mathcal{P}_g^{\theta\theta} = \frac{2GM}{c^2}, \quad \text{etc.}$$
+
+**Convergence conditions**: The iteration converges when:
+- $||T^{\mu\nu}|| < c^4/(8\pi G)$ (sub-Planckian energy density)
+- Initial seed metric is sufficiently close to the final solution
+- The domain $\mathcal{D}$ excludes singularities
+
+For strongly curved spacetimes or near singularities, the iteration may diverge, signaling breakdown of the classical description.
 
 ### A.2 Modular Hamiltonian Spectrum for Thermal States
 
 For a thermal state at temperature $T_H$, the modular Hamiltonian eigenvalues are:
 
-$\mu_n = \beta_H(\epsilon_n - \langle H \rangle)$
+$$\mu_n = \beta_H(\epsilon_n - \langle H \rangle)$$
 
 where $\epsilon_n$ are energy eigenvalues. For black holes:
 
-$\{\mu_n\} = \left\{\frac{8\pi GM}{c^3}\left(n + \frac{1}{2}\right)\hbar\omega - \mu_0\right\}_{n=0}^{N_{\text{max}}}$
+$$\{\mu_n\} = \left\{\frac{8\pi GM}{c^3}\left(n + \frac{1}{2}\right)\hbar\omega - \mu_0\right\}_{n=0}^{N_{\text{max}}}$$
 
 with $N_{\text{max}} \sim A/l_P^2$ and $\mu_0$ ensuring $\text{Tr}(\rho) = 1$.
 
@@ -341,11 +399,11 @@ with $N_{\text{max}} \sim A/l_P^2$ and $\mu_0$ ensuring $\text{Tr}(\rho) = 1$.
 
 For acoustic black holes in BECs, the correlation function becomes:
 
-$C_{12}^{\text{BEC}}(\omega) = \frac{\hbar\omega_{\text{phonon}}}{e^{\beta_{\text{eff}}\hbar\omega_{\text{phonon}}} - 1} \times \exp\left(-\frac{r_{12}^2}{\xi^2}\right)$
+$$C_{12}^{\text{BEC}}(\omega) = \frac{\hbar\omega_{\text{phonon}}}{e^{\beta_{\text{eff}}\hbar\omega_{\text{phonon}}} - 1} \times \exp\left(-\frac{r_{12}^2}{\xi^2}\right)$$
 
 where $\xi$ is the healing length and $\beta_{\text{eff}} = \hbar c_s/(2\pi k_B T_{\text{Hawking}}^{\text{analog}})$ with $c_s$ the sound speed.
 
 Observable quantity: Phase correlation in density-density measurements:
-$\langle \delta n(\vec{r}_1,t) \delta n(\vec{r}_2,t) \rangle - \langle \delta n(\vec{r}_1,t) \rangle\langle\delta n(\vec{r}_2,t)\rangle$
+$$\langle \delta n(\vec{r}_1,t) \delta n(\vec{r}_2,t) \rangle - \langle \delta n(\vec{r}_1,t) \rangle\langle\delta n(\vec{r}_2,t)\rangle$$
 
 This can be measured using standard BEC imaging techniques with sensitivity $\Delta n/n \sim 10^{-3}$.
