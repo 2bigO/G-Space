@@ -1,19 +1,19 @@
 # G-Space: An Information-Theoretic Model of Quantum Gravitational Correlations
 
-**Keyvan M. Sadeghi**  
-*July 2025*
+**Keyvan M. Sadeghi**
+*August 2025*
 
 ---
 
 ## Abstract
 
-We propose a coordinate system for gravitational systems defined not by spacetime positions but by information-theoretic parameters: gravitational entropy $(S_g)$, propagation kernel $(\mathcal{P}_g)$ defined via influence functionals, and entanglement spectrum $(\Phi_E)$ based on modular Hamiltonian eigenspectra. Under the simplifying assumption that systems sharing identical coordinates may exhibit non-local correlations, we derive specific predictions for phase coherence in Hawking radiation. While astrophysical tests require sensitivity improvements of $\sim 10^{60}$, we propose laboratory analogs, particularly in Bose-Einstein condensate analogs of black holes, that may empirically test the model's central postulate. We emphasize this is an exploratory model—a parameterization tool for correlating quantum gravitational phenomena—not a fundamental theory.
+We propose a coordinate system for gravitational systems defined not by spacetime positions but by information-theoretic parameters: gravitational entropy $(S_g)$, propagation kernel $(\mathcal{P}_g)$ defined via influence functionals, and entanglement spectrum $(\Phi_E)$ based on modular Hamiltonian eigenspectra. Under the simplifying assumption that systems sharing identical coordinates may exhibit nonlocal quantum correlations beyond standard QFT, we derive specific predictions for phase coherence in Hawking radiation. While astrophysical tests require sensitivity improvements of $\sim 10^{60}$, we propose laboratory analogs, particularly in Bose-Einstein condensate analogs of black holes, that may empirically test the model's central postulate. We emphasize this is an exploratory model—not a new theory of quantum gravity, but a tool for uncovering potential correlations embedded in its informational substrate.
 
 ---
 
 ## 1. Introduction
 
-Recent developments in quantum gravity suggest spacetime may be emergent rather than fundamental [1-3]. The AdS/CFT correspondence [4] demonstrates that aspects of bulk geometry can be encoded in boundary entanglement [5], while the ER=EPR conjecture links geometric and quantum connectivity [6]. These established results motivate exploring models where information and entanglement play primary roles.
+Recent developments in quantum gravity suggest spacetime may be emergent rather than fundamental [1-3]. The AdS/CFT correspondence [4] demonstrates that aspects of bulk geometry can be encoded in boundary entanglement [5], while the ER=EPR conjecture links geometric and quantum connectivity [6]. These established results motivate exploring models where information and entanglement play primary roles. Recent work by Neukart has proposed that quantum information directly shapes spacetime curvature through an informational stress-energy tensor [12], providing additional support for information-theoretic approaches to gravity.
 
 This paper develops a parameterization tool—not a theory of everything—that treats gravitational systems as if they were characterized by three information-theoretic coordinates rather than spacetime position. We examine the consequences of assuming that systems with matching information-theoretic parameters—regardless of spacetime location—may exhibit measurable correlations. While this assumption may ultimately be false, pursuing it yields concrete predictions that can guide both theoretical development and experimental design.
 
@@ -231,9 +231,9 @@ The model's value lies in:
 - Suggesting experimental pathways through analog systems, particularly BECs
 - Offering a background-independent formulation where spacetime emerges from G-space
 
-Future work should focus on developing analog experiments, refining the mathematical formalism (especially projection maps), and exploring connections to established quantum gravity approaches. Whether nature realizes anything resembling this model remains open, but its precision enables meaningful empirical investigation.
+Future work should focus on developing analog experiments, refining the mathematical formalism (especially projection maps), and exploring connections to established quantum gravity approaches. The recent surge of interest in gravity-mediated entanglement [13-15] and information-theoretic approaches to gravity [12] suggests the field is ripe for frameworks like G-space that make precise, testable predictions about quantum gravitational phenomena. Whether nature realizes anything resembling this model remains open, but its precision enables meaningful empirical investigation.
 
-While G-space may or may not describe nature, it offers a precise, falsifiable lens through which we may uncover the hidden symmetries of gravity and information.
+Recent proposals [12-15] have increasingly treated quantum correlations as carriers of geometric or gravitational information, lending support to the kind of coordinate-based framework we explore here. While G-space may or may not describe nature, it offers a precise, falsifiable lens through which we may uncover the hidden symmetries of gravity and information.
 
 ---
 
@@ -266,6 +266,14 @@ We thank [colleagues] for discussions. This work was supported by [funding agenc
 [10] Cian, Z.-P., et al. (2022). "Many-body Chern number from statistical correlations of randomized measurements." Phys. Rev. Lett. 128, 010501.
 
 [11] Li, H. & Haldane, F.D.M. (2008). "Entanglement spectrum as a generalization of entanglement entropy: Identification of topological order in non-abelian fractional quantum Hall effect states." Phys. Rev. Lett. 101, 010504.
+
+[12] Neukart, F. (2025). "Quantum information dynamics and emergent gravity: A unified framework." Annals of Physics 474, 169811.
+
+[13] Krisnanda, T., Tham, G.Y., Paternostro, M. & Paterek, T. (2020). "Observable quantum entanglement due to gravity." npj Quantum Information 6, 12.
+
+[14] Anastopoulos, C., Lagouvardos, M. & Savvidou, K.N. (2025). "Newton's laws of motion generating gravity-mediated entanglement." Phys. Rev. A 111, 042202.
+
+[15] Brahma, S. & Seenivasan, A.N. (2023). "Probing the curvature of the cosmos from quantum entanglement due to gravity." Int. J. Mod. Phys. D 32, 2342010.
 
 ---
 
