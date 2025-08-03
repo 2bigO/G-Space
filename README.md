@@ -81,6 +81,30 @@ Spacetime emerges via projection operators $\Pi_x: \mathcal{G} \rightarrow \math
 $|\text{BH at } x_1\rangle = \Pi_{x_1}|S_g(M), \mathcal{P}_g(M), \Phi_E(M)\rangle$
 $|\text{BH at } x_2\rangle = \Pi_{x_2}|S_g(M), \mathcal{P}_g(M), \Phi_E(M)\rangle$
 
+```mermaid
+graph TD
+    subgraph "Spacetime Manifold"
+        BH1["Black Hole<br/>Milky Way<br/>(x₁, t₁)<br/><i>Same G-coordinates</i>"]
+        BH2["Black Hole<br/>Andromeda<br/>(x₂, t₂)<br/><i>Same G-coordinates</i>"]
+        BH3["Black Hole<br/>Virgo Cluster<br/>(x₃, t₃)<br/><i>Same G-coordinates</i>"]
+    end
+    
+    subgraph "G-Space"
+        G["Single G-Space Point<br/>S_g = 4πGM²/ℏc<br/>𝒫_g = 𝒫_Sch(M)<br/>Φ_E = Φ_thermal(T_H)"]
+    end
+    
+    BH1 -.->|"Π_x₁"| G
+    BH2 -.->|"Π_x₂"| G
+    BH3 -.->|"Π_x₃"| G
+    
+    style G fill:#f9f,stroke:#333,stroke-width:4px
+    style BH1 fill:#bbf,stroke:#333,stroke-width:2px
+    style BH2 fill:#bbf,stroke:#333,stroke-width:2px
+    style BH3 fill:#bbf,stroke:#333,stroke-width:2px
+```
+
+> **Figure:** Multiple spacetime realizations of a single G-space point. Each projection $\Pi_{x_i}$ maps the same gravitational-information coordinate to a different spacetime location.
+
 We leave the construction of explicit $\Pi_x$ operators to future work, treating them here as abstract maps that encode how a G-space entity interfaces with local observers. These operators must be consistent with observational decoherence and preserve the causal structure of the emergent spacetime. In the classical limit, they reduce to coordinate charts on the emergent manifold.
 
 ### 3.2 Dynamics
