@@ -263,7 +263,7 @@ Recent proposals [12-15] have increasingly treated quantum correlations as carri
 
 ## Acknowledgments
 
-We thank [colleagues] for discussions. This work was supported by [funding agencies].
+We thank [colleagues] for discussions.
 
 ---
 
