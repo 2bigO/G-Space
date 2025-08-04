@@ -80,6 +80,7 @@ This assumption—that coordinate matching implies correlation—is the core hyp
 In our model, spacetime emerges via projection maps $\Pi_x: \mathcal{G} \rightarrow \mathcal{M}^4$ that map G-space coordinates to spacetime events. Multiple projections of the same G-space coordinates yield apparently distinct objects:
 
 $$|\text{BH at } x_1\rangle = \Pi_{x_1}|S_g(M), \mathcal{P}_g(M), \Phi_E(M)\rangle$$
+
 $$|\text{BH at } x_2\rangle = \Pi_{x_2}|S_g(M), \mathcal{P}_g(M), \Phi_E(M)\rangle$$
 
 ```mermaid
