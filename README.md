@@ -98,10 +98,10 @@ graph TD
     BH2 -.->|"Π_x₂"| G
     BH3 -.->|"Π_x₃"| G
     
-    style G fill:#f9f,stroke:#333,stroke-width:4px
-    style BH1 fill:#bbf,stroke:#333,stroke-width:2px
-    style BH2 fill:#bbf,stroke:#333,stroke-width:2px
-    style BH3 fill:#bbf,stroke:#333,stroke-width:2px
+    style G fill:#f9f,stroke:#333,stroke-width:4px,color:#000
+    style BH1 fill:#bbf,stroke:#333,stroke-width:2px,color:#000
+    style BH2 fill:#bbf,stroke:#333,stroke-width:2px,color:#000
+    style BH3 fill:#bbf,stroke:#333,stroke-width:2px,color:#000
 ```
 
 **Figure:** Multiple spacetime realizations of a single G-space point. Each projection $\Pi_{x_i}$ maps the same gravitational-information coordinate to a different spacetime location.
